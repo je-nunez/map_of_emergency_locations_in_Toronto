@@ -2,17 +2,21 @@
 
 This is a map of different types of emergency locations in Toronto, in R.
 
-# Warning: this program must not be used in emergency locations when a life must be saved
+# WARNING before use
 
-**This program must not be used in emergency locations when a life must be saved**. This program
-may not give the precise information necesary to find emergency locations in this situation where
-every second matters, this program might execute slowly in these urgent situations or might not
-finish to execute in these situations at all, and even then, the location shown in the map by this
-program may not be available at this critical emergency, losing precious time, for the data this
-program uses from the Open Data of the City of Toronto may not be updated real-time when an
-emergency location happens to be congested or unavailable. (Besides, the handling of an emergency
-usually requires a logistic involving different types of public services, not only one, made
-available as soon as possible at the place of the emergency.)
+**This program must not be used in emergency situations where a life must be saved**.
+
+This program may not give the precise information necesary to find emergency locations in the
+situation when a life must be saved, where every second matters. This program might execute
+slowly in these urgent situations or might not finish to execute in these situations at all,
+and even then, the locations shown in the map by this program may not be available at this
+critical emergency, losing precious time, for the data this program uses from the Open Data
+of the City of Toronto may not be updated real-time when an emergency location happens to be
+congested or unavailable. (Besides, the handling of an emergency usually requires a logistic
+involving different types of public services, not only one, made available as soon as possible
+at the place of the emergency. To coordinate this logistic urgently, the intervention of an
+expert human agent is obligatory. This program is **not** related nor interacts with 9-1-1
+infrastructures.)
 
 # WIP
 
