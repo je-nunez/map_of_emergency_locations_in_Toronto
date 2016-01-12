@@ -23,11 +23,24 @@ infrastructures.)
 This project is a *work in progress*. The implementation is *incomplete* and subject to change.
 The documentation can be inaccurate.
 
+# Emergency locations represented on the Map
+
+This program downloads and uses several ESRI shapefiles made available by the Open Data
+initiative of the City of Toronto.
+
+So far, the following shapefiles are used:
+
+[Police Facilities] (http://www1.toronto.ca/wps/portal/contentonly?vgnextoid=4071790e6f21d210VgnVCM1000003dd60f89RCRD)
+
+[Ambulance Station Locations] (http://www1.toronto.ca/wps/portal/contentonly?vgnextoid=93f91c98d2b6d310VgnVCM10000071d60f89RCRD&vgnextchannel=1a66e03bb8d1e310VgnVCM10000071d60f89RCRD)
+
+[Automatic External Defibrillators] (http://www1.toronto.ca/wps/portal/contentonly?vgnextoid=6455da18d9f44410VgnVCM10000071d60f89RCRD)
+
 # Requirements
 
-Besides R and network connectivity, this program requires the `wget` program (it can be done also with `curl`),
-`unzip` command-line, and the `ogr2ogr` command-line tool. This last program can be installed from the `gdal`
-rpm package (RedHat) or `gdal-bin` (Debian) or `gdal` (brew in Mac OS/X):
+Besides `R` and network connectivity, this program requires the `wget` program (it can be done also with `curl`),
+the `unzip` command-line tool, and the `ogr2ogr` command-line tool. This last program can be installed from the
+`gdal` rpm package (RedHat) or `gdal-bin` (Debian) or `gdal` (brew in Mac OS/X):
 
         dnf install gdal
 
@@ -36,8 +49,6 @@ rpm package (RedHat) or `gdal-bin` (Debian) or `gdal` (brew in Mac OS/X):
         brew install gdal
 
 (These belong to the Geospatial Data Abstraction Library)
-
-This program downloads and uses ESRI shapefiles made available by the City of Toronto.
 
 # Example of the map generated
  
