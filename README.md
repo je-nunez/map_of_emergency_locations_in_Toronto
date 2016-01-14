@@ -28,13 +28,15 @@ The documentation can be inaccurate.
 This program downloads and uses several ESRI shapefiles made available by the Open Data
 initiative of the City of Toronto.
 
-So far, the following shapefiles are used:
+So far, the following ESRI shapefiles or CSV files are used:
 
 [Police Facilities] (http://www1.toronto.ca/wps/portal/contentonly?vgnextoid=4071790e6f21d210VgnVCM1000003dd60f89RCRD)
 
+[Automatic External Defibrillators] (http://www1.toronto.ca/wps/portal/contentonly?vgnextoid=6455da18d9f44410VgnVCM10000071d60f89RCRD)
+
 [Ambulance Station Locations] (http://www1.toronto.ca/wps/portal/contentonly?vgnextoid=93f91c98d2b6d310VgnVCM10000071d60f89RCRD&vgnextchannel=1a66e03bb8d1e310VgnVCM10000071d60f89RCRD)
 
-[Automatic External Defibrillators] (http://www1.toronto.ca/wps/portal/contentonly?vgnextoid=6455da18d9f44410VgnVCM10000071d60f89RCRD)
+[Air Conditioned Public Places & Cooling Centres] (http://www1.toronto.ca/wps/portal/contentonly?vgnextoid=e7356d1900531510VgnVCM10000071d60f89RCRD)
 
 # Requirements
 
@@ -50,8 +52,13 @@ the `unzip` command-line tool, and the `ogr2ogr` command-line tool. This last pr
 
 (These belong to the Geospatial Data Abstraction Library)
 
-# Example of the map generated
+# Example of the maps generated
  
-![sample of the map of emergency locations in Toronto](/toronto_emergency_locations.png?raw=true "sample of the map of emergency locations in Toronto")
+The program in R needs to be called after the shell script, and generates two maps, one with all the emergency locations together in one common map, and another with each type of emergency location standing alone in a separated map).
 
+Samples of these two maps are below:
+
+![sample of all emergency locations together in one common map](/toronto_emergency_locations_together.png?raw=true "sample of all emergency locations together in one common map")
+
+![sample of the grid with each type of emergency location standing alone in a separated map](/toronto_emergency_locations_separated.png?raw=true "sample of the grid with each type of emergency location standing alone in a separated map")
 

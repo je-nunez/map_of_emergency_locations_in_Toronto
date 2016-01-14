@@ -26,3 +26,10 @@ wget -O ambulance_facility_wgs84.zip http://opendata.toronto.ca/gcc/ambulance_fa
 unzip -o ambulance_facility_wgs84.zip
 
 ogr2ogr -where "OGR_GEOMETRY='Point'" -f "ESRI Shapefile"  toronto_ambulance_facility_wgs84.shp  AMBULANCE_FACILITY_WGS84.shp
+
+
+# Download the Air Conditioned Public Places & Cooling Centres
+# http://www1.toronto.ca/wps/portal/contentonly?vgnextoid=e7356d1900531510VgnVCM10000071d60f89RCRD
+
+wget -O toronto_cooling_centres.csv  'http://app.toronto.ca/opendata//ac_locations/locations.csv?v=1.00'
+
